@@ -40,7 +40,7 @@ elif modulo == "2. Preparación de Datos":
         df = pd.read_csv(file)
         st.write("Vista previa del dataset:", df.head())
 
-        if st.checkbox("Mostrar estadísticas"'):
+        if st.checkbox("Mostrar estadísticas"):
             st.write(df.describe())
 
         col = st.selectbox("Selecciona una columna para visualizar:", df.columns)
